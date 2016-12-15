@@ -1,13 +1,17 @@
 # apl-backend
 
 ## Linux prereqs
+```
 sudo apt-get install mongodb-server python3 python3-dev python3-virtualenv ffmpegthumbnailer
-
+```
 ## Mac prereqs
+```
 brew install mongodb python3 ffmpegthumbnailer
 pip3 install -U pip virtualenv
+```
 
 ## Install project
+```
 cd ~/projects
 git clone git://github.com/penmark/apl-backend.git
 cd apl-backend
@@ -28,3 +32,4 @@ S3_SSL=true
 EOF
 # edit .env file and add s3 info
 npm start
+```
