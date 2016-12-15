@@ -4,6 +4,7 @@
 ```
 sudo apt-get install mongodb-server python3 python3-dev python3-virtualenv ffmpegthumbnailer
 ```
+
 ## Mac prereqs
 ```
 brew install mongodb python3 ffmpegthumbnailer
@@ -33,3 +34,6 @@ EOF
 # edit .env file and add s3 info
 npm start
 ```
+
+## Ingest
+```ingest ~/Movies/some_movie```
