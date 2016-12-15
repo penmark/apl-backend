@@ -9,6 +9,7 @@ sudo apt-get install mongodb-server python3 python3-dev python3-virtualenv ffmpe
 ```
 brew install mongodb python3 ffmpegthumbnailer
 pip3 install -U pip virtualenv
+brew services start mongodb
 ```
 
 ## Install project
