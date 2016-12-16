@@ -7,7 +7,7 @@ sudo apt-get install mongodb-server python3 python3-dev python3-virtualenv ffmpe
 
 ## Mac prereqs
 ```
-brew install mongodb python3 ffmpegthumbnailer
+brew install mongodb python3 ffmpegthumbnailer libmagic
 pip3 install -U pip virtualenv
 brew services start mongodb
 ```
@@ -22,8 +22,8 @@ mkdir -p ~/.virtualenv
 virtualenv --python=python3 ~/.virtualenv/apl
 . ~/.virtualenvs/apl/bin/activate
 pip install -U pip
-pip install -e git+git://github.com/penmark/s3-wrapper.git@1.0.2#egg=s3_wrapper
-pip install -e git+git://github.com/penmark/ingest.git@1.0.2#egg=ingest
+pip install git+https://github.com/penmark/s3-wrapper.git@1.0.2#egg=s3_wrapper
+pip install git+https://github.com/penmark/ingest.git@1.0.2#egg=ingest
 cat > .env <<EOF;
 MONGO_URI=mongodb://localhost/media
 MONGO_COLLECTION=asset
@@ -32,9 +32,12 @@ S3_ACCESS_KEY=<access key>
 S3_SECRET_KEY=<secret key>
 S3_SSL=true
 EOF
+
 # edit .env file and add s3 info
 npm start
 ```
 
 ## Ingest
-```ingest ~/Movies/some_movie```
+```
+ingest ~/Movies/some_movie.mp4
+```
