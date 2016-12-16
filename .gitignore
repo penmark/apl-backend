@@ -2,3 +2,4 @@ dist
 bin
 node_modules
 .env
+.idea/workspace.xml

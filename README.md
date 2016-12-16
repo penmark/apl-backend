@@ -20,7 +20,7 @@ cd apl-backend
 npm i
 mkdir -p ~/.virtualenv
 virtualenv --python=python3 ~/.virtualenv/apl
-. ~/.virtualenvs/apl/bin/activate
+. ~/.virtualenv/apl/bin/activate
 pip install -U pip
 pip install git+https://github.com/penmark/s3-wrapper.git@1.0.2#egg=s3_wrapper
 pip install git+https://github.com/penmark/ingest.git@1.0.2#egg=ingest
