@@ -2,7 +2,7 @@
 
 ## Linux prereqs
 ```
-sudo apt-get install mongodb-server python3 python3-dev python3-virtualenv ffmpegthumbnailer
+sudo apt-get install mongodb-server python3 python3-dev python3-virtualenv ffmpegthumbnailer libxml2-dev libxslt1-dev
 ```
 
 ## Mac prereqs
