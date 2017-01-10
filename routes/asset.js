@@ -10,7 +10,11 @@ module.exports = (db) => {
         .sort({title: 1})
         .toArray()
         .then(result => {
-          res.send(result)
+          res.send(result.map(asset => Object.assign({}, asset, {
+              assetId: asset._id,
+              frameRate: asset.frame_rate,
+              fileSize: asset.file_size
+          })))
         })
         .catch(err => next(err))
     })
