@@ -13,7 +13,8 @@ module.exports = (db) => {
           res.send(result.map(asset => Object.assign({}, asset, {
               assetId: asset._id,
               frameRate: asset.frame_rate,
-              fileSize: asset.file_size
+              fileSize: asset.file_size,
+              dropFrame: typeof asset.tim !== 'undefined'
           })))
         })
         .catch(err => next(err))
