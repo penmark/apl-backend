@@ -1,9 +1,10 @@
 # apl-backend
 
 ## Linux prereqs
+(Tested on Debian Jessie)
 ```
-sudo apt install mongodb-server python3 python3-dev python3-virtualenv ffmpegthumbnailer \
-libxml2-dev libxslt1-dev build-essential
+sudo apt install mongodb-server mediainfo ffmpegthumbnailer python3 python3-dev python3-virtualenv \
+libxml2-dev libxslt1-dev build-essential zlib1g-dev
 ```
 
 ## Mac prereqs
