@@ -2,7 +2,8 @@
 
 ## Linux prereqs
 ```
-sudo apt-get install mongodb-server python3 python3-dev python3-virtualenv ffmpegthumbnailer libxml2-dev libxslt1-dev
+sudo apt install mongodb-server python3 python3-dev python3-virtualenv ffmpegthumbnailer \
+libxml2-dev libxslt1-dev build-essential
 ```
 
 ## Mac prereqs
@@ -69,4 +70,3 @@ The apl-backend is able serve ingested media over http, the following command wi
 ```
 npm start
 ```
-
