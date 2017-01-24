@@ -14,7 +14,8 @@ module.exports = (db) => {
               assetId: asset._id,
               frameRate: asset.frame_rate,
               fileSize: asset.file_size,
-              dropFrame: typeof asset.tim !== 'undefined'
+              dropFrame: typeof asset.tim !== 'undefined',
+              url: asset.s3uri
           })))
         })
         .catch(err => next(err))
